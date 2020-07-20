@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container-fluid" style="text-align: center;">
+			<header
+				class="jumbotron"
+				style="background-color: #9e2f35; color: white;"
+			>
+				<h1>Sistema de Predição de action figures</h1>
+				<p>Luffy, Luigi, Super Mario e Zabuza Momochi</p>
+			</header>
+			<div class="Informacao row">
+				<div class="col-md-3">
+					<h2>Luffy</h2>
+					<p>
+						Monkey D. Luffy é o protagonista do anime e mangá One
+						Piece. Luffy é um pirata que deseja ser o Rei dos
+						Piratas. É o capitão da tripulação do Bando do Chapéu de
+						Palha e líder da Grande Frota dos Chapéus de Palha.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h2>Luigi</h2>
+					<p>
+						Luigi é um personagem fictício de videogames produzido
+						pela Nintendo. Criado pelo designer de jogos Shigeru
+						Miyamoto, Luigi é irmão do Mario e é um dos mascotes da
+						série, ele é o seu companheiro em vários jogos.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h2>Super Mario</h2>
+					<p>
+						Super Mario é uma série de videogames de plataforma
+						japonesa e franquia de mídia criada pela Nintendo e
+						apresentando seu mascote, Mario. Alternativamente
+						chamada de Super Mario Bros. ou simplesmente Mario, é a
+						série central da franquia Mario.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h2>Zabuza Momochi</h2>
+					<p>
+						Membros dos Sete Espadachins.
+					</p>
+				</div>
+			</div>
+			<button
+				type="button"
+				class="btn btn-primary mt-3 mb-3"
+				onclick="init()"
+			>
+				Iniciar Reconhecimento
+			</button>
+			<div id="webcam-container"></div>
+			<div class="display-4" id="label-container"></div>
+
+			<footer
+				class="panel-footer"
+				style="
+					text-align: center;
+					background-color: #9e2f35;
+					color: white;
+				"
+			>
+				<p class="pt-3 pb-3">
+					&copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					| Sistemas de Informação 7º Periodo <br />
+					Emanuel Victor Barroso Leite <br />
+					Everton Otavio Afonso
+				</p>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script src="tensor.js"></script>
+	</body>
+</html>
